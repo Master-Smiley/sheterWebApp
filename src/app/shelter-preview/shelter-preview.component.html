@@ -1,8 +1,14 @@
-<div class="card mx-auto" style="width: 50rem;">
-    <img class="card-img-top" src="http://static-31.sinclairstoryline.com/resources/media/827d5f0e-4b53-4889-8195-5c93bdbe0584-large16x9_homelesssheltercap.jpg?1515137989443" alt="Card image cap">
-    <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Directions to here!</a>
+<div class="mt-3" *ngFor="let shelter of shelters">
+    <div *ngIf="gender == shelter.gender">
+        <div class="card mx-auto" style="width: 50rem;">
+            <img class="card-img-top" src="{{shelter.image}}" alt="Card image cap">
+            <div class="card-body">
+                <h3 class="card-title">{{shelter.name}}</h3>
+                <h5 class="card-title">{{shelter.location}}</h5>
+                <p class="card-text">{{shelter.description}}</p>
+                <a href="{{shelter.locationUrl}}" class="btn btn-primary">Directions to here!</a>
+            </div>
+        </div>
     </div>
+
 </div>

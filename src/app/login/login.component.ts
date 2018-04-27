@@ -26,9 +26,13 @@ export class LoginComponent implements OnInit {
 
   onLogin() {
       const user = new User(this.loginForm.value.username, this.loginForm.value.password);
-      if (this.authService.loggingIn(user)) {
-        sessionStorage.setItem('username', user.username);
-        this.router.navigateByUrl('/');
+      const newUser: User = this.authService.loggingIn(user);
+      if (newUser != null) {
+        sessionStorage.setItem('username', newUser.username);
+        console.log('this thing');
+        console.log(newUser);
+        sessionStorage.setItem('gender', newUser.gender);
+        this.router.navigateByUrl('/home');
       }
     }
 

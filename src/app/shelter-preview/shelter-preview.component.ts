@@ -1,3 +1,5 @@
+import { AuthService } from '../auth.service';
+import { User } from '../models/user.model';
 import { Shelter } from '../models/shelter.model';
 import { Component, Input, OnInit } from '@angular/core';
 
@@ -8,10 +10,14 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ShelterPreviewComponent implements OnInit {
 
-  @Input() shelter: Shelter;
-  constructor() { }
+  @Input() shelters: Shelter[];
+  gender: string;
+  constructor(public authService: AuthService) {
+    this.gender = sessionStorage.getItem('gender');
+  }
 
   ngOnInit() {
+    console.log(this.gender);
   }
 
 }

@@ -14,7 +14,7 @@ export class ShelterService {
     new Shelter('The Shepherd\'s Inn', 'Atlanta, GA', "https://www.google.com/maps/place/Atlanta+Mission:+The+Shepherd's+Inn/@33.764893,-84.3947697,17z/data=!3m1!4b1!4m5!3m4!1s0x88f5047c3cd07a8b:0x8f3303778ba469e7!8m2!3d33.7648728!4d-84.3922197",
     "Male", 'https://www.homelessshelterdirectory.org/gallery/2475__pgr.jpg', 'The Shepherd’s Inn, a sanctuary for men in Atlanta who are experiencing homelessness, is able to accommodate up to 450 men at any given time.'),
     new Shelter('Fuqua Hall', 'Atlanta, GA', "https://www.google.com/maps/place/Atlanta+Mission:+Fuqua+Hall/@33.76515,-84.3944617,17z/data=!3m1!4b1!4m5!3m4!1s0x88f5047c142c9d11:0xa8296a42ba9ee658!8m2!3d33.76515!4d-84.392273",
-    'Male', 'http://atlantanewhomes.typepad.com/.a/6a00e54ee8e5308834017ee83b037a970d-popup',
+    'Male', 'http://assets.nydailynews.com/polopoly_fs/1.2600205.1460588791!/img/httpImage/image.jpg_gen/derivatives/article_1200/homeless14n-4-web.jpg',
     'The Atlanta Mission is a transitional home that serves men on their way to self-sufficiency.'),
     new Shelter('Eden Village', 'Atlanta, GA', "https://www.google.com/maps/place/1300+Joseph+E.+Boone+Blvd+NW,+Atlanta,+GA+30314/@33.7623158,-84.4324183,17z/data=!3m1!4b1!4m5!3m4!1s0x88f504a9b2d9aa59:0xf8ed610d2a5f275e!8m2!3d33.7623158!4d-84.4302296",
     "Female", 'https://movinginfaith.files.wordpress.com/2014/10/14-may-6765_web.jpg', 'Eden Village is the “One-Stop Shop for Women in Crisis.” The facility accommodates residents for up to 180 days if needed. In addition to housing, Eden Village offers medical, vision, dental, and mental health care through Mercy Care.'),

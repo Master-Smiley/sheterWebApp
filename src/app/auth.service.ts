@@ -12,16 +12,19 @@ export class AuthService {
 
   loggingIn(user: User) {
     let exists = false;
+    let newUser;
     this.allUsers.forEach(element => {
       if (element.username === user.username && element.password === user.password) {
         exists = true;
+        newUser = element;
       }
     });
     if (exists) {
       sessionStorage.setItem('username', user.username);
-      return true;
+      sessionStorage.setItem('gender', newUser.gender);
+      return newUser;
     }
-    return false;
+    return null;
 
   }
 
@@ -40,6 +43,15 @@ export class AuthService {
       return true;
     }
     return false;
+  }
+
+  getUser() {
+    this.allUsers.forEach(element => {
+      if (sessionStorage.getItem('username') === element.username) {
+        return element;
+      }
+      return new User(null, null, null);
+    });
   }
 
 }
