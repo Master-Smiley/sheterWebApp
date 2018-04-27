@@ -11,6 +11,7 @@ import { SignupComponent } from './signup/signup.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LandingComponent } from './landing/landing.component';
 import { HomeComponent } from './home/home.component';
+import { ShelterPreviewComponent } from './shelter-preview/shelter-preview.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HomeComponent } from './home/home.component';
     LoginComponent,
     SignupComponent,
     LandingComponent,
-    HomeComponent
+    HomeComponent,
+    ShelterPreviewComponent
   ],
   imports: [
     FormsModule,

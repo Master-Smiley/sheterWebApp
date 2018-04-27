@@ -23,12 +23,13 @@ export class SignupComponent implements OnInit {
     password: new FormControl(null, Validators.required),
     type: new FormControl(null, Validators.required),
     email: new FormControl(null, Validators.required),
+    gender: new FormControl(null, Validators.required)
     });
   }
 
   signUp() {
     const user = new User(this.signupForm.value.username, this.signupForm.value.password,
-      this.signupForm.value.email, this.signupForm.value.type);
+      this.signupForm.value.email, this.signupForm.value.type, this.signupForm.value.gender);
     console.log(user);
     if (this.authService.onSignUp(user)) {
       this.router.navigateByUrl('/login');
