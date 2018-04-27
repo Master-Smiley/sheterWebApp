@@ -18,7 +18,7 @@ export class AuthService {
       }
     });
     if (exists) {
-      localStorage.setItem('user', user.username);
+      sessionStorage.setItem('username', user.username);
       return true;
     }
     return false;

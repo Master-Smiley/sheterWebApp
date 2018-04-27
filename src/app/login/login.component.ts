@@ -27,6 +27,7 @@ export class LoginComponent implements OnInit {
   onLogin() {
       const user = new User(this.loginForm.value.username, this.loginForm.value.password);
       if (this.authService.loggingIn(user)) {
+        sessionStorage.setItem('username', user.username);
         this.router.navigateByUrl('/');
       }
     }

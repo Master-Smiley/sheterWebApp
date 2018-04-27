@@ -13,6 +13,10 @@ export class NavbarComponent implements OnInit {
   }
 
   isLoggedIn() {
-    return localStorage.getItem('username') != null;
+    return sessionStorage.getItem('username') != null;
+  }
+
+  logout() {
+    sessionStorage.clear();
   }
 }

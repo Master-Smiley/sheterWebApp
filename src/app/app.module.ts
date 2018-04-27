@@ -1,3 +1,4 @@
+import { ShelterService } from './shelter.service';
 import { AuthService } from './auth.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -26,7 +27,7 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     routing
   ],
-  providers: [AuthService],
+  providers: [AuthService, ShelterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
